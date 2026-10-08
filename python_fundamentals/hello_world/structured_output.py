@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-Lenguage= "Python"
+Language= "Python"
 Version= 3
 Pi= 3.1416
 Computation_valid= Version > 2
