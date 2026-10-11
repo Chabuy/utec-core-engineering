@@ -9,7 +9,7 @@ if number > 5:
     print(f"Last digit of {number} is {last_digit} and is", end=" ")
 elif number == 0:
     print(f"Last digit of {number} is {last_digit} and is", end=" ")
-elif number <= 5 and last_digit > 0:
+elif number <= 5 and number > 0:
     print(f"Last digit of {number} is {last_digit} and is", end=" ")
 else:
     print(f"Last digit of {number} is -{last_digit} and is", end=" ")
