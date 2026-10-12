@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 
-for value in range(0,99):
+for value in range(0, 99):
     print("{0:d} = 0x{0:x}".format(value))
