@@ -8,6 +8,6 @@ for i in range (0, 10):
         dig2= str(last_digit)
         num= int(dig1+dig2)
         if first_digit== 8 and last_digit== 9:
-           print("{0:02d}".format(num), end="")
+            print("{0:02d} ".format(num), end="")
         else:
             print("{0:02d}, ".format(num), end="")
