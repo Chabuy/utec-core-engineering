@@ -9,6 +9,6 @@ def islower(c):
     else:
         return False
 
-valor = input("ingrese letra para saber si es minúscula: ")
-result = islower(valor)
-print(result)
+# valor = input("ingrese letra para saber si es minúscula: ")
+# result = islower(valor)
+# print(result)
