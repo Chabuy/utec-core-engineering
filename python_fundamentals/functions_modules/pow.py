@@ -11,7 +11,7 @@ def pow(a,b):
 
 
 def integer_power(a, b):
-    if exponent >= 0:
+    if b >= 0:
         return pow(a, b)
 
     if base == 0:
