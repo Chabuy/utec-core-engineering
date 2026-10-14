@@ -7,4 +7,4 @@ def print_last_digit(number):
         if value != "-":
             digits.append(int(value))
     return abs(digits[-1])
-    
+    print()
