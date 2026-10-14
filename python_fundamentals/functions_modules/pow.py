@@ -3,18 +3,11 @@
 def pow(a,b):
     result=1
 
-    for _ in range(b):
+    for _ in range(abs(b)):
         result *= a
+    
+    if b < 0:
+        return 1 / result
 
     return result
 
-
-
-def integer_power(a, b):
-    if b >= 0:
-        return pow(a, b)
-
-    if a == 0:
-        raise ZeroDivisionError("zero cannot have a negative exponent")
-
-    return 1 / pow(a, -b)
