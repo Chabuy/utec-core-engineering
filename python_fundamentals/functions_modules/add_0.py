@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
 def add(a, b):
-    resultado= a + b
-    return resultado
+    return a + b
+
+if __name__ == "__main__":
+    print(add(1, 2))
