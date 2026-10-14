@@ -9,4 +9,4 @@ def uppercase(str):
             mayuscula = (ascii_code - 32)
             print(chr(mayuscula), end="")
 
-resultado = uppercase("Pedro")
+# resultado = uppercase("Pedro")
