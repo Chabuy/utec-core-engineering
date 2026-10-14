@@ -5,6 +5,6 @@ def print_last_digit(number):
     for value in (str(number)):
         if value != "-":
             digits.append(int(value))
-    last_digit= digits[-1]
+    last_digit = digits[-1]
     print(last_digit, end="")
     return last_digit
