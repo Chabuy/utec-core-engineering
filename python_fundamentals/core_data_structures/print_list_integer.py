@@ -8,4 +8,4 @@ def print_list_integer(my_list=[]):
 
 if __name__ == "__main__":
     result = print_list_integer()
-    print("\n".join("{}".format(v) for v in result))
+    print("\n".join("{:d}".format(v) for v in result))
