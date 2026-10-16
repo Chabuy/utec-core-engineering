@@ -5,8 +5,8 @@ def print_list_integer(my_list=[]):
         return my_list
 
 
-if __name__ == "__main__":
-    my_list = [1,2,3]
-    result = print_list_integer(my_list)
-    print("\n".join("{:d}".format(v) for v in result))
+# if __name__ == "__main__":
+#     my_list = [1,2,3]
+#     result = print_list_integer(my_list)
+#     print("\n".join("{:d}".format(v) for v in result))
   
