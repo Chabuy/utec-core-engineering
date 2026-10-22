@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 def safe_print_list(my_list=[], x=0):
-    new_list = []
+    quantity = 0
     for item in range(x):
         try:
-           new_list.append(my_list[item]) 
+            print("{:d}".format(my_list[item]), end="")
         except (TypeError, IndexError):
             continue
-    print(f"{new_list}\nnb_print:{x}")
+    quantity += 1
+    print()
+    return quantity
