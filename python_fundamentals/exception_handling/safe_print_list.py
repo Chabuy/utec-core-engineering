@@ -8,7 +8,3 @@ def safe_print_list(my_list=[], x=0):
         except (TypeError, IndexError):
             continue
     print(f"{new_list}\nnb_print:{x}")
-
-
-my_list = [1, 2, "tres", 4, 5]
-nb_print = safe_print_list(my_list, 10)
