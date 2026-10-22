@@ -7,7 +7,10 @@ def safe_print_list_integers(my_list=[], x=0):
             if type(my_list[item]) == int:
                 print("{:d}".format(my_list[item]), end="")
                 quantity += 1
-        except (TypeError, IndexError):
+        except (TypeError):
             continue
+        except (IndexError):
+             print("list index out of range")
+            
     print()
     return quantity
