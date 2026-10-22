@@ -7,6 +7,6 @@ def safe_print_list(my_list=[], x=0):
             print("{:d}".format(my_list[item]), end="")
         except (TypeError, IndexError):
             continue
-    quantity += 1
+        quantity += 1
     print()
     return quantity
