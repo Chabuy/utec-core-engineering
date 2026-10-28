@@ -2,5 +2,5 @@
 
 class Square:
     """Representa un cuadrado."""
-    def __init__(self):
-        return self.value
+    def __init__(self, lado):
+        self.lado = (lado * 4)
