@@ -7,12 +7,11 @@ class Square:
     def __init__ (self, size):
         self.__size = size
 
-    @property()
+    @property
     def size(self):
         """Devuelve valor lados."""
         return self.__size
 
-   
     @size.setter
     def size(self, value):
         if type(value) is not int:
