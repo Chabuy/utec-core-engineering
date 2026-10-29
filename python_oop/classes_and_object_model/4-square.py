@@ -8,7 +8,7 @@ class Square:
         self.__size = size
 
     def get_area(self):
-        self.area = self.size * self.size
+        self.area = self.__size * self.__size
         return self.area
 
     
