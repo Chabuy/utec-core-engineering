@@ -17,7 +17,7 @@ class Square:
         offset = 0
         rows = [" " * offset + symbol * width for _ in range(height)]
         result = "\n".join(rows)
-        print (result)
+        print(result)
 
     @property
     def size(self):
