@@ -10,6 +10,15 @@ class Square:
     def area(self):
         return self.__size ** 2
 
+    def my_print(self):
+        symbol = "#"
+        width = self.size
+        height = self.size
+        offset = 2
+        rows = [" " * offset + symbol * width for _ in range(height)]
+        result = "\n".join(rows)
+        print (result)
+
     @property
     def size(self):
         """Devuelve valor lados."""
