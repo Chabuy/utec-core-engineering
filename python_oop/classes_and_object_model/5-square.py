@@ -14,7 +14,7 @@ class Square:
         symbol = "#"
         width = self.size
         height = self.size
-        #offset = 2
+        offset = 0
         rows = [" " * offset + symbol * width for _ in range(height)]
         result = "\n".join(rows)
         print (result)
