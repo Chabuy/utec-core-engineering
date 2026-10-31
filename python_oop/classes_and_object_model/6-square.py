@@ -52,9 +52,9 @@ class Square:
     def __str__(self):
         """Genera el texto del cuadrado."""
         if self.__size == 0:
-            return ""
+            return " "
 
-        texto = ""
+        texto = " "
 
         # Líneas verticales vacías (posición Y)
         for _ in range(self.__position[1]):
