@@ -4,7 +4,7 @@
 
 class Square:
     """Representa un cuadrado."""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
 
@@ -24,7 +24,7 @@ class Square:
     def position(self):
         """Devuelve postion."""
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         if type(value) is not tuple or len(value) != 2:
