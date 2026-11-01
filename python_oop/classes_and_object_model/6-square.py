@@ -11,14 +11,6 @@ class Square:
     def area(self):
         return self.__size ** 2
 
-    def my_print(self):
-        symbol = "#"
-        width = self.size
-        height = self.size
-        offset = self.position
-        rows = [" " * offset + symbol * width for _ in range(height)]
-        result = "\n".join(rows)
-        print(result)
 
     @property
     def position(self):
@@ -35,31 +27,6 @@ class Square:
             raise ValueError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    def my_print(self):
-        """Imprime el cuadrado."""
-        print(self.__str__())
-
-    def __str__(self):
-        """Genera el texto del cuadrado."""
-        if self.__size == 0:
-            return ""
-
-        texto = ""
-
-        # Líneas verticales vacías (posición Y)
-        for _ in range(self.__position[1]):
-            texto += "\n"
-
-        # Filas del cuadrado
-        for i in range(self.__size):
-            texto += " " * self.__position[0]
-            texto += "#" * self.__size
-            # Agrega salto de línea solo si no es la última fila
-            if i < self.__size - 1:
-                texto += "\n"
-
-        return texto
-
     @property
     def size(self):
         """Devuelve valor lados."""
@@ -72,3 +39,23 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
+    def my_print(self):
+        """Imprime el cuadrado."""
+        print(self.__str__())
+
+    def __str__(self):
+        """Genera la representación en texto del cuadrado."""
+        if self.__size == 0:
+            return ""
+
+        rows = []
+        # Saltos verticales según position[1]
+        for _ in range(self.__position[1]):
+            rows.append("")
+
+        # Espacios horizontales según position[0] y '#' según size
+        for _ in range(self.__size):
+            rows.append(" " * self.__position[0] + "#" * self.__size)
+
+        return "\n".join(rows)
