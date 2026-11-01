@@ -8,7 +8,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def width(self):
         """Devuelve valor ancho."""
