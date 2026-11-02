@@ -1,18 +1,6 @@
 #!/usr/bin/env python3
-"""Módulo que define la clase Square."""
-
-
-class BaseGeometry:
-    """Representa una base geometrica."""
-
-    def area(self):
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        if type(value) is not int:
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+"""Módulo que define la clase Rectangle que hereda de BaseGeometry."""
+BaseGeometry = __import__('base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
