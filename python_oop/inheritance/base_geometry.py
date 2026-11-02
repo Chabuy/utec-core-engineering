@@ -13,11 +13,3 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-
-
-class Rectangle(BaseGeometry):
-    def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
-        super().integer_validator(width, value)
-        super().integer_validator(height, value)
